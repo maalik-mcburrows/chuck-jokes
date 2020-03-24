@@ -1,0 +1,67 @@
+html{
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+body{
+    background: linear-gradient(45deg, yellow, rgb(72, 255, 0));
+}
+
+h1{
+    text-align: center;
+}
+
+.buttonsAndInputs{
+    display: inline-block;
+    /* float: left; */
+}
+
+button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.img1Div{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.img1Div img{
+    height: auto;
+    width: 100%;
+}
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.modal-overlay.open{
+    display: flex;
+}
+
+.modal-content{
+    background-color: white;
+    border-radius: 15%;
+    padding: 16px;
+    margin: auto;
+    width: 640px;
+    height: auto;
+}
+
+.modal-content p{
+    font-size: 2rem;
+}
